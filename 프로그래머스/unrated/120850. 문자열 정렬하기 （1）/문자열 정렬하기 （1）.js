@@ -1,8 +1,8 @@
 function solution(my_string) {
-    var answer = [];
+    let answer = [];
     for (let i of my_string) {
         let num = Number(i)
-        if (Number.isInteger(num)) {
+        if (!isNaN(num)) {
             answer.push(num)
         }
     }
