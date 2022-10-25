@@ -23,7 +23,7 @@
 <h5>제한사항</h5>
 
 <ul>
-<li>1 ≤ <code>numbers</code>의 길이 ≤ 100</li>
+<li>3 ≤ <code>numbers</code>의 길이 ≤ 20</li>
 <li><code>direction</code>은 "left" 와 "right" 둘 중 하나입니다.</li>
 </ul>
 
