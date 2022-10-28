@@ -5,16 +5,14 @@ function solution(n) {
     
     let result = 1;
     let i = 0;
-    let count = 0;
     
     while (result < n) {
         i++;
         result = result * i
-        count++;
     }
     if (result > n) {
-        return count-1;
+        return i-1;
     } else if (result === n) {
-        return count;
+        return i;
     } 
 }
