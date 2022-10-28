@@ -14,7 +14,7 @@ function solution(n) {
     }
     if (result > n) {
         return count-1;
-    } else if (result !== 1 && result === n) {
+    } else if (result === n) {
         return count;
     } 
 }
