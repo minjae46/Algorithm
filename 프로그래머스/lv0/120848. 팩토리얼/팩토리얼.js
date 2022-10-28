@@ -1,4 +1,8 @@
 function solution(n) {
+    if (n === 1) {
+        return 1;
+    }
+    
     let result = 1;
     let i = 0;
     let count = 0;
@@ -9,20 +13,8 @@ function solution(n) {
         count++;
     }
     if (result > n) {
-        return count-1
+        return count-1;
     } else if (result !== 1 && result === n) {
-        return count
-    } else {
-        return 1
-    }
-    
-    
-    // for (let i=1; i<=10; i++) {
-    //     result *= i
-    //     if (result > n) {
-    //         return i-1
-    //     } else if (result !== 1 && result === n) {
-    //         return i
-    //     }
-    // }
+        return count;
+    } 
 }
