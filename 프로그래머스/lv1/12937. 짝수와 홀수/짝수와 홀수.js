@@ -1,3 +1,4 @@
 function solution(num) {
-    return num % 2 ? "Odd" : "Even" ;
+    const answer = num % 2 ? "Odd" : "Even" ;
+    return answer;
 }
