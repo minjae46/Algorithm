@@ -4,7 +4,7 @@ function solution(s) {
         let letter = s[i];
         obj[letter] ? obj[letter] += 1 : obj[letter] = 1
     }
-
+    //객체로 빈도 수 세기 패턴 이용
     const keyArr = Object.keys(obj)
     const resultArr = [];
     for (let i of keyArr) {
