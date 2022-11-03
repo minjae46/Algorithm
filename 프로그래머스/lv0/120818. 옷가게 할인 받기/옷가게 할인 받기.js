@@ -10,5 +10,5 @@ function solution(price) {
         answer = price*0.8;
     } 
     answer = Math.floor(answer);
-    return answer
+    return answer;
 }
