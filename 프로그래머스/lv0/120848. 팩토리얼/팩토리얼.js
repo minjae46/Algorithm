@@ -10,6 +10,7 @@ function solution(n) {
         i++;
         result = result * i
     }
+    
     if (result > n) {
         return i - 1;
     } else if (result === n) {
