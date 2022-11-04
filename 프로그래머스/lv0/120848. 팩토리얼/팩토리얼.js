@@ -11,7 +11,7 @@ function solution(n) {
         result = result * i
     }
     if (result > n) {
-        return i-1;
+        return i - 1;
     } else if (result === n) {
         return i;
     } 
