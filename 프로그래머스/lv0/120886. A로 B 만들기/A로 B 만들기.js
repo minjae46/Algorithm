@@ -20,6 +20,7 @@ function solution(before, after) {
         }
     }
     
-    return 1    
+    return 1;    
+    
     //before.split('').sort().join('') === after.split('').sort().join('') ? 1 : 0;
 }
