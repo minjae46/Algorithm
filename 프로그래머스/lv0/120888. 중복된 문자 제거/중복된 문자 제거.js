@@ -1,5 +1,5 @@
 function solution(my_string) {
-    let arr = my_string.split('')
+    const arr = my_string.split('')
     let newArr = [];
     for (let i in arr) {
         if (!newArr.includes(arr[i])) {
@@ -7,5 +7,5 @@ function solution(my_string) {
         }
     }
     let answer = newArr.join('')
-    return answer
+    return answer;
 }
