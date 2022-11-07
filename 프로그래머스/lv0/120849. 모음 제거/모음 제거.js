@@ -1,4 +1,4 @@
 function solution(my_string) {
-    let newStr = my_string.replace(/[aeiou]/g, '');
-    return newStr
+    const answer = my_string.replace(/[aeiou]/g, '');
+    return answer;
 }
