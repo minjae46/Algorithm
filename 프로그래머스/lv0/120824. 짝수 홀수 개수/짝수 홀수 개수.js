@@ -8,5 +8,5 @@ function solution(num_list) {
             odd.push(num_list[i])
         }
     }
-    return [even.length, odd.length]
+    return [even.length, odd.length];
 }
