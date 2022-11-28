@@ -6,4 +6,5 @@ function solution(n) {
         }
     }
     return count;
+    //순서쌍 중 첫번째 숫자의 개수만 알면 된다. 
 }
