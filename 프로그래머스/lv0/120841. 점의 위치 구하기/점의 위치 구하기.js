@@ -8,6 +8,5 @@ function solution(dot) {
         return 3;
     } else {
         return 4;
-    }
-    
+    };    
 }
