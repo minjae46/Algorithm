@@ -1,5 +1,6 @@
 function solution(angle) {
     let answer = 0;
+    
     if(0 < angle && angle < 90) {
         answer = 1;
     } else if(angle === 90) {
@@ -9,5 +10,6 @@ function solution(angle) {
     } else if(angle === 180) {
         answer = 4;
     }
+    
     return answer;
 }
