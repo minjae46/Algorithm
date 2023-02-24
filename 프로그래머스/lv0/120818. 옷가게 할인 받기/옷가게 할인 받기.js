@@ -1,6 +1,5 @@
 function solution(price) {
     let answer = 0;
-    
     if (price >= 0 && price < 100000) {
         answer = price;
     } else if (price >= 100000 && price < 300000) {
