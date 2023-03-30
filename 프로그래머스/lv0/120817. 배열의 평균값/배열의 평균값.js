@@ -5,6 +5,7 @@ function solution(numbers) {
     for(i of numbers) {
         answer += i
     }
+    return answer/numbers.length;
     */
     answer = sum/numbers.length;
     return answer;
