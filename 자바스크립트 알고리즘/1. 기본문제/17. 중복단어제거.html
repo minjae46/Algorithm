@@ -5,13 +5,18 @@
   </head>
   <body>
     <script>
-      function solution() {
-        let answer;
+      function solution(arr) {
+        let answer = [];
+        answer = arr.filter((v, i) => {
+          if (arr.indexOf(v) === i) return true;
+        });
+        //filter는 콜백함수의 결과값이 참일 경우만 남기고 반환한다.
 
         return answer;
       }
 
-      console.log(solution());
+      let arr = ["good", "time", "good", "time", "student"];
+      console.log(solution(arr));
     </script>
   </body>
 </html>
