@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(arr) {
+        let answer;
+        let max = Number.MIN_SAFE_INTEGER;
+        for (let i of arr) {
+          let sum = 0;
+          let tmp = i;
+          //tmp 변수를 설정해야 하는 이유 :
+          //sum값을 구하기 위함이며, i값을 그대로 넣을 시 i값이 0이 되어버리므로,
+          //answer에 i를 대입할 수 없게 되기 때문이다
+          while (tmp) {
+            sum += tmp % 10;
+            tmp = Math.floor(tmp / 10);
+          } // -> 각 자릿수 합 구하는 공식 : tmp가 0이 될 때까지 나누는 것
+
+          /* 다른 답 
+          let sum=i.toString().split("").reduce((a,b)=>a+Number(b),0);
+          */
+
+          if (sum > max) {
+            max = sum;
+            answer = i;
+          } else if (sum === max) {
+            if (i > answer) answer = i;
+          }
+        }
+
+        return answer;
+      }
+
+      let arr = [128, 460, 603, 40, 521, 137, 123];
+      console.log(solution(arr));
+    </script>
+  </body>
+</html>
