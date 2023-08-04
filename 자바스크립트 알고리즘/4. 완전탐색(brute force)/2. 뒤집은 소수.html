@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      const isPrime = (num) => {
+        if (num === 1) return false;
+        for (let i = 2; i <= parseInt(num / 2); i++) {
+          // 왜 num/2 까지만 돌리는지 이해할 것
+          if (num % i === 0) return false;
+        }
+        return true;
+      };
+      // 소수인지 확인하는 함수
+
+      function solution(arr) {
+        let answer = [];
+        for (let x of arr) {
+          let result = 0;
+          while (x) {
+            //x가 0이 될 때까지 돈다
+            let t = x % 10; //t는 x값의 1의 자리 숫자
+            result = result * 10 + t;
+            x = parseInt(x / 10); //x에 10으로 나눈 몫을 대입
+          } // -> 숫자 뒤집는 공식
+
+          /* 다른 정답
+          let result = Number(x.toString().split('').reverse().join(""));
+          */
+
+          if (isPrime(result)) answer.push(result);
+        }
+
+        return answer;
+      }
+
+      let arr = [32, 55, 62, 20, 250, 370, 200, 30, 100];
+      console.log(solution(arr));
+    </script>
+  </body>
+</html>
