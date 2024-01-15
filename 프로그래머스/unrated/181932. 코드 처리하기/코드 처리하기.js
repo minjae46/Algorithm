@@ -1,4 +1,5 @@
 function solution(code) {
+    // 어려울 것 없이, 왼쪽 풀이 설명을 그대로 코드로 옮기면 된다. 
     let answer = '';
     let mode = 0;
     for(let i=0; i<code.length; i++) {
